@@ -53,13 +53,6 @@
         android:layout_height="236dp"
         android:layout_marginTop="100dp">
 
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            tools:listitem="@layout/fragment_main_search_design"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -67,11 +60,7 @@
         android:layout_height="331dp"
         android:layout_marginTop="390dp">
 
-        <ListView
-            android:id="@+id/listView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/fragment_main_search_design"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
 

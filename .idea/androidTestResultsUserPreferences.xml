@@ -9,10 +9,12 @@
               <option name="preferredColumnWidths">
                 <map>
                   <entry key="10160a3495b32502" value="120" />
+                  <entry key="231a56bd1f017ece" value="120" />
                   <entry key="Duration" value="90" />
                   <entry key="Pixel_3_API_30" value="120" />
                   <entry key="Tests" value="360" />
                   <entry key="samsung&#10; SM-A810S" value="120" />
+                  <entry key="samsung&#10; SM-G965N" value="120" />
                 </map>
               </option>
             </AndroidTestResultsTableState>

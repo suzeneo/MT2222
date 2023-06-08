@@ -1,22 +1,13 @@
 package com.example.mt2;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class MainMenu extends Fragment {
@@ -27,7 +18,11 @@ public class MainMenu extends Fragment {
     private Button button7;
     private Button button4;
 
+    private Button button8;
+
     private Button button2;
+
+
 
 
 
@@ -42,6 +37,8 @@ public class MainMenu extends Fragment {
         button4 = view.findViewById(R.id.button4);
         button6 = view.findViewById(R.id.button6);
         button7 = view.findViewById(R.id.button7);
+        button8 = view.findViewById(R.id.button8);
+
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,6 +105,8 @@ public class MainMenu extends Fragment {
         });
 
         return view;
+
+
     }
 
 
