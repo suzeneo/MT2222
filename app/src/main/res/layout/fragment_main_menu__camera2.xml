@@ -18,7 +18,6 @@
             android:src="@drawable/baseline_arrow_back_ios_24"
             tools:ignore="MissingConstraints" />
 
-
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
@@ -37,30 +36,13 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="70dp"
         android:textSize="15dp"
-        android:text="복용가능 약" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="360dp"
-        android:textSize="15dp"
         android:text="복용금기 약" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="236dp"
-        android:layout_marginTop="100dp">
+        android:layout_height="104dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"></LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="331dp"
-        android:layout_marginTop="390dp">
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
 

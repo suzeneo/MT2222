@@ -4,19 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class Fragment_menu_button3 extends Fragment {
 
-
     private View view;
     private ImageButton imageButton;
-
 
 
     @Override
@@ -24,25 +20,27 @@ public class Fragment_menu_button3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
+        imageButton = view.findViewById(R.id.imageButton);
 
-        RelativeLayout layout = (RelativeLayout)inflater.inflate(R.layout.fragment_menu_button3, container, false);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle(); //무언가 담을 준비를 할 수 있는 보따리
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
 
-        String[] list_menu = {"아스피린","shine"};
+                MainMenu mainmenu = new MainMenu();
+                mainmenu.setArguments(bundle);
+                transaction.replace(R.id.menu_frame_layout,mainmenu);
+                transaction.commit(); //저장
+            }
+        });
 
-        ListView listview = (ListView) layout.findViewById(R.id.list_menu);
-
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(
-                getActivity(),
-                android.R.layout.simple_list_item_1,
-                list_menu
-        );
-        listview.setAdapter(listViewAdapter);
-
-        return layout;
-
-
+        return view;
     }
 
 
 
 }
+
+
+

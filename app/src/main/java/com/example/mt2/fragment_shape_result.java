@@ -1,19 +1,18 @@
 package com.example.mt2;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_main_search1_1#newInstance} factory method to
+ * Use the {@link fragment_shape_result#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_main_search1_1 extends Fragment {
+public class fragment_shape_result extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +23,7 @@ public class fragment_main_search1_1 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_main_search1_1() {
+    public fragment_shape_result() {
         // Required empty public constructor
     }
 
@@ -34,11 +33,11 @@ public class fragment_main_search1_1 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_main_search1_1.
+     * @return A new instance of fragment fragment_shape_result.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_main_search1_1 newInstance(String param1, String param2) {
-        fragment_main_search1_1 fragment = new fragment_main_search1_1();
+    public static fragment_shape_result newInstance(String param1, String param2) {
+        fragment_shape_result fragment = new fragment_shape_result();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -46,12 +45,19 @@ public class fragment_main_search1_1 extends Fragment {
         return fragment;
     }
 
-
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_search1_1, container, false);
+        return inflater.inflate(R.layout.fragment_shape_result, container, false);
     }
 }

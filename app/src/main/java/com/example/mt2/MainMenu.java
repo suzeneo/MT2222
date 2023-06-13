@@ -17,13 +17,8 @@ public class MainMenu extends Fragment {
     private Button button6;
     private Button button7;
     private Button button4;
-
     private Button button8;
-
     private Button button2;
-
-
-
 
 
     @Override
@@ -38,7 +33,6 @@ public class MainMenu extends Fragment {
         button6 = view.findViewById(R.id.button6);
         button7 = view.findViewById(R.id.button7);
         button8 = view.findViewById(R.id.button8);
-
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +71,6 @@ public class MainMenu extends Fragment {
                 transaction.commit(); //저장
             }
         });
-
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { //프래그먼트 이동
