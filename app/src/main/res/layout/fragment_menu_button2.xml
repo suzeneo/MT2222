@@ -49,6 +49,7 @@
         android:layout_marginTop="280dp"
         android:layout_marginEnd="30dp"
         android:paddingStart="20dp"
+        android:background="@drawable/search_background"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="MT(Medicine Teacher)은 복용 금기 약을 설정한 후\n관리할 수 있는 앱입니다.

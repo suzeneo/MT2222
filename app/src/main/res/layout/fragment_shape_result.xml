@@ -6,7 +6,7 @@
     tools:context=".fragment_shape_result">
 
     <ListView
-        android:id="@+id/listviewitem"
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"

@@ -43,8 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
-        android:backgroundTint="#33736F"
-        android:text="확인" />
+        android:text="확인"
+        android:backgroundTint="#5FD1C6"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 
 
     <LinearLayout

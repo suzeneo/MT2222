@@ -86,7 +86,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#33736F"
+        android:backgroundTint="#5FD1C6"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:text="확인" />
 
 

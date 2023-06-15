@@ -6,9 +6,12 @@
     tools:context=".fragment_search_shape2"
     android:gravity="center"
     android:layout_margin="20dp"
-    android:background="@drawable/gridline">
+    android:background="@drawable/gridline"
+    android:orientation="horizontal">
 
     <!-- TODO: Update blank fragment layout -->
+
+
 
     <GridLayout
         android:layout_width="match_parent"
@@ -99,5 +102,26 @@
             android:contentDescription="@string/eeee" />
 
     </GridLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
 
 </LinearLayout>

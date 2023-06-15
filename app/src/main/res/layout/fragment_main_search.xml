@@ -18,6 +18,7 @@
             android:layout_width="330dp"
             android:layout_height="50dp"
             android:layout_marginTop="0dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/search_background"
             android:drawableTint="@android:color/darker_gray"
             android:hint="@string/getsearch"
@@ -37,9 +38,10 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:baselineAligned="false"
+
             android:drawableLeft="@drawable/searchbtn"
             android:paddingStart="10dp"
-            android:textColor="#00897B" />
+            android:contentDescription="searchbtn"/>
 
 
     </LinearLayout>
@@ -129,6 +131,7 @@
                     android:baselineAligned="false"
                     android:paddingStart="20dp"
                     android:text="@string/word"
+                    android:textSize="18dp"
                     android:textColor="#00897B" />
             </LinearLayout>
 
@@ -162,6 +165,7 @@
                     android:baselineAligned="false"
                     android:paddingStart="20dp"
                     android:text="@string/shape"
+                    android:textSize="18dp"
                     android:textColor="#00897B" />
             </LinearLayout>
 
@@ -254,8 +258,9 @@
                     android:layout_height="50dp"
                     android:background="#000000"
                     android:baselineAligned="false"
+                    android:textSize="18dp"
                     android:paddingStart="20dp"
-                    android:text="@string/words"
+                    android:text="@string/Color"
                     android:textColor="#00897B" />
             </LinearLayout>
 
